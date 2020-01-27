@@ -1,5 +1,7 @@
 # ShoppingCart
 
+Note: please download/install Node and NPM if you don't have them on your computer before going through the following instruction: https://nodejs.org/en/download/
+
 ## How to run backend api service (NodeJS/Express)
 
 `cd apiService` and `npm install` to install all dependencies for backend api, then `npm run start` to bring up the server on port 8080.
