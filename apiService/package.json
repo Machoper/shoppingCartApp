@@ -1,0 +1,21 @@
+{
+  "name": "apiService",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node .",
+    "test": "mocha test/apiTest.js"
+  },
+  "author": "Yixuan Qian",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "chai": "^4.2.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-session": "^1.17.0",
+    "mocha": "^7.0.1",
+    "supertest": "^4.0.2"
+  }
+}
