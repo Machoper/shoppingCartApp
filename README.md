@@ -10,9 +10,9 @@ you can try out the following requests using Postman:
 - GET `http://localhost:8080/api/total` (to get shopping cart total)
 
 Additionally, you can also try out:
-- GET http://localhost:8080/api/shopping-cart (to view current shopping cart)
-- DELETE http://localhost:8080/api/shopping-cart (to clear current shopping cart)
-- GET http://localhost:8080/api/items (to view available items)
+- GET `http://localhost:8080/api/shopping-cart` (to view current shopping cart)
+- DELETE `http://localhost:8080/api/shopping-cart` (to clear current shopping cart)
+- GET `http://localhost:8080/api/items` (to view available items)
 
 Since the requirement says no external database or other type of storage engine, I made use of session to keep track of the shopping cart info.
 
