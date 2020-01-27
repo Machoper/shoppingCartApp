@@ -1,0 +1,30 @@
+<h1>Our signiture fruits</h1>
+<div class="row item-wrapper">
+	<div class="col-sm-5 fruit-item card" *ngFor="let item of items">
+		<h3 class="mt-3">{{item.description}}</h3>
+		<div>Price: ${{item.unit_price}}</div>
+
+		<div class="input-group mb-3 mt-2 pl-5 pr-5">
+			<span class="pr-2 mt-1">Quantity: </span>
+			<span class="input-group-prepend">
+				<button type="button" class="btn btn-secondary" [disabled]="isMinusDisabled(item)" (click)="minusOne(item)">
+					<span>-</span>
+				</button>
+			</span>
+			<input type="number" [(ngModel)]="item.quantity" class="form-control" min="1" [readonly]="true">
+			<span class="input-group-append">
+				<button class="btn btn-secondary" (click)="plusOne(item)">
+					<span>+</span>
+				</button>
+			</span>
+		</div>
+
+		<span class="badge badge-warning mb-3" *ngFor="let discount of item.volume_discounts">
+			Discount: {{discount.number}} for ${{discount.price}}
+		</span>
+
+		<button class="btn btn-primary mb-3" id={{item.id}} (click)="addToCart(item)">
+			Add to Cart
+		</button>
+	</div>
+</div>

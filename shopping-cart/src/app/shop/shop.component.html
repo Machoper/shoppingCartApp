@@ -1,0 +1,15 @@
+<nav class="navbar navbar-dark bg-dark">
+	<a class="navbar-brand ml-3" href="#">Welcome to the Fruit Shop</a>
+</nav>
+<div class="row">
+	<div class="col-sm-8 p-5 item-list">
+		<app-item 
+			(itemAdded)="onItemAdded($event)">
+		</app-item>
+	</div>
+	<div class="col-sm-4 p-5">
+		<app-cart 
+			[cart]="cart">
+		</app-cart>
+	</div>
+</div>

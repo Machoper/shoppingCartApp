@@ -1,0 +1,22 @@
+<h1>Shopping Cart</h1>
+<table class="table">
+	<thead class="thead-dark">
+		<tr>
+			<th scope="col">Item</th>
+			<th scope="col">Quantity</th>
+			<th scope="col">Item Total</th>
+		</tr>
+	</thead>
+	<tbody>
+	<tr *ngFor="let item of cart.items | keyvalue">
+		<td>{{item.value.name}}</td> 
+		<td>{{item.value.quantity}}</td> 
+		<td>${{item.value.itemTotal}}</td>
+	</tr>
+	<tr class="table-primary font-weight-bold">
+		<td colspan="2">Total</td>
+		<td>${{cart.total}}</td>
+	</tr>
+	</tbody>
+</table>
+<button type="button" class="btn btn-secondary clear-cart" (click)="clearCart()">Clear Cart</button>
